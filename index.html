@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <p class="add-subtract" id="work-decrease">&minus;</p>
+      <button data-time="1500" class="timer__button" id="work-time">Work:<br>25 minutes</button>
+      <p class="add-subtract" id="work-increase">&plus;</p>
+      <p class="add-subtract" id="break-decrease">&minus;</p>
+      <button data-time="300" class="timer__button" id="break-time">Break:<br>5 minutes</button>
+      <p class="add-subtract" id="break-increase">&plus;</p>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Minutes">
+      </form>
+    </div>
+    <div class="function">
+      <button class="start">Start</button>
+      <button class="pause">Pause</button>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left">25:00</h1>
+      <p class="display__end-time"></p>
+    </div>
+  </div>
+
+  <script src="scripts-START.js"></script>
+</body>
+</html>
